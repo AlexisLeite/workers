@@ -1,0 +1,80 @@
+.WorkersWidget
+  margin: 10px
+  border: 1px solid red
+    color: inherit
+    radius: 3px
+  padding: 10px
+  display: block
+
+
+  table
+    text-align: left
+    border-collapse: collapse
+    margin: auto
+    
+
+    caption
+      font-size: 1.1em
+      font-weight: bold
+      padding: 0 10px 10px 10px
+
+    thead
+      text-align: center
+      border:
+        bottom: 1px solid red
+        color: inherit
+
+    tbody
+      tr
+        th
+          text-align: left
+
+    td, th
+      padding: 4px 10px
+
+  div ~ div
+    font-weight: bold
+    text-align: right
+    font-size: 1em
+    padding: 10px 0 0 0
+
+.WorkerDetails
+  div+table 
+    width: 80vw
+  table
+    text-align: left
+    margin-bottom: 20px
+
+    td, th 
+      padding: 3px 15px
+
+    &:first-of-type
+      border: 3px solid black
+
+    &:last-of-type
+      margin-bottom: 0
+      
+    img
+      width: 20vw
+
+    table
+      border: none !important
+
+    position: relative
+    thead
+      display: none
+      text-align: right
+      position: absolute
+      z-index: 10
+      right: 0
+      height: 0
+      border: none
+
+      button
+        border: none
+        margin: 0
+
+
+    &:hover
+      thead
+        display: block
